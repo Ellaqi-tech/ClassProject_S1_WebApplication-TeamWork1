@@ -34,3 +34,16 @@ Each column should be 17.48% wide with a gutter space of 3.14%
     float: left;
     margin-right: 0;
 }
+
+/*
+Each column should be 14.28% wide with a gutter space of 2.85%
+*/
+.col6 {
+    width: 10%;
+    float: left;
+    margin-right: 2%;
+}
+
+.col6last {
+    margin-right: 0;
+}

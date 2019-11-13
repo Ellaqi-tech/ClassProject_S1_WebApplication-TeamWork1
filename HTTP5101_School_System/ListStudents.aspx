@@ -8,7 +8,7 @@
             <div class="col5">LAST NAME</div>
             <div class="col5">STUDENT NUMBER</div>
             <div class="col5">ENROLMENT DATE</div>
-            <div class="col5last">MODIFY</div>
+            <div class="col5last">VIEW</div>
         </div>
     </div>
 </asp:Content>

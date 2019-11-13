@@ -41,8 +41,8 @@ namespace HTTP5101_School_System
 
                 string enrolmentdate = row["ENROLMENTDATE"];
                 students_result.InnerHtml += "<div class=\"col5\">" + enrolmentdate + "</div>";
-                students_result.InnerHtml += "<div class=\"col5last\">" + "Update, Delete, View" + "</div>";
-                //students_result.InnerHtml += "<div class=\"col5last\">" + deleteButton.ClientID + "</div>";
+                string studentid = row["STUDENTID"];
+                students_result.InnerHtml += "<div class=\"col5last\">" + "<label for=\"view_studentid_" + studentid + "\">View</label> <input type=\"submit\" id=\"view_studentid_" + studentid + "\" name=\"view_studentid\" value=\"" + studentid + "\" /> </div>";
                 students_result.InnerHtml += "</div>";
             }
             
