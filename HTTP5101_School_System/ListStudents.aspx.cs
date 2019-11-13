@@ -25,6 +25,9 @@ namespace HTTP5101_School_System
             List<Dictionary<String,String>> rs = db.List_Query(query);
             foreach(Dictionary<String,String> row in rs)
             {
+                Button deleteButton = new Button();
+                deleteButton.ID = "deleteStudentWithID";
+                deleteButton.Text = "X";
                 students_result.InnerHtml += "<div class=\"listitem\">";
 
                 string studentfirstname = row["STUDENTFNAME"];
@@ -37,8 +40,9 @@ namespace HTTP5101_School_System
                 students_result.InnerHtml += "<div class=\"col5\">" + studentnumber + "</div>";
 
                 string enrolmentdate = row["ENROLMENTDATE"];
-                students_result.InnerHtml += "<div class=\"col5\">" + enrolmentdate + "</div>";   
+                students_result.InnerHtml += "<div class=\"col5\">" + enrolmentdate + "</div>";
                 students_result.InnerHtml += "<div class=\"col5last\">" + "Update, Delete, View" + "</div>";
+                //students_result.InnerHtml += "<div class=\"col5last\">" + deleteButton.ClientID + "</div>";
                 students_result.InnerHtml += "</div>";
             }
             

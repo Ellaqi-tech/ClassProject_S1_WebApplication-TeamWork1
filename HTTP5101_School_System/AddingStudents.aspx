@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Layout.Master" AutoEventWireup="true" CodeBehind="AddingStudents.aspx.cs" Inherits="HTTP5101_School_System.AddingStudents" %>
 
 <asp:Content ID="AddingStudents" ContentPlaceHolderID="body" runat="server">
-    <form id="Students_Adding" runat="server">
+    <!-- <form id="Students_Adding" runat="server">
           <div>
             <label for="student_fname">First name:</label>
             <asp:Textbox runat="server" ID="student_fname" placeholder="John"></asp:Textbox>
@@ -12,5 +12,5 @@
             <asp:Button runat="server" text="Submit" />
             <div id="AddingSummary"></div>
          </div>
-    </form>       
+    </form>-->      
 </asp:Content>
